@@ -16,6 +16,7 @@
 		DD4C90A129EFB3F5003F6F7E /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4C90A029EFB3F5003F6F7E /* UserDefaultManager.swift */; };
 		DD4C90A429EFBCB2003F6F7E /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = DD4C90A329EFBCB2003F6F7E /* Moya */; };
 		DD4C90A629EFBCDE003F6F7E /* APILogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4C90A529EFBCDE003F6F7E /* APILogger.swift */; };
+		DD4C90AA29EFC0A2003F6F7E /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4C90A929EFC0A2003F6F7E /* BaseRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		DD4C909A29EFB3E1003F6F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD4C90A029EFB3F5003F6F7E /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 		DD4C90A529EFBCDE003F6F7E /* APILogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILogger.swift; sourceTree = "<group>"; };
+		DD4C90A929EFC0A2003F6F7E /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +68,22 @@
 				DD4C908E29EFB3E0003F6F7E /* SceneDelegate.swift */,
 				DD4C909029EFB3E0003F6F7E /* ViewController.swift */,
 				DD4C90A029EFB3F5003F6F7E /* UserDefaultManager.swift */,
-				DD4C90A529EFBCDE003F6F7E /* APILogger.swift */,
+				DD4C90A829EFC02E003F6F7E /* Network */,
 				DD4C909229EFB3E0003F6F7E /* Main.storyboard */,
 				DD4C909529EFB3E1003F6F7E /* Assets.xcassets */,
 				DD4C909729EFB3E1003F6F7E /* LaunchScreen.storyboard */,
 				DD4C909A29EFB3E1003F6F7E /* Info.plist */,
 			);
 			path = CommonTemplate;
+			sourceTree = "<group>";
+		};
+		DD4C90A829EFC02E003F6F7E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DD4C90A529EFBCDE003F6F7E /* APILogger.swift */,
+				DD4C90A929EFC0A2003F6F7E /* BaseRepository.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4C90AA29EFC0A2003F6F7E /* BaseRepository.swift in Sources */,
 				DD4C90A629EFBCDE003F6F7E /* APILogger.swift in Sources */,
 				DD4C909129EFB3E0003F6F7E /* ViewController.swift in Sources */,
 				DD4C908D29EFB3E0003F6F7E /* AppDelegate.swift in Sources */,

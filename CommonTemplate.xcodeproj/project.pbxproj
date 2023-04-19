@@ -18,6 +18,7 @@
 		DD4C90A629EFBCDE003F6F7E /* APILogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4C90A529EFBCDE003F6F7E /* APILogger.swift */; };
 		DD4C90AA29EFC0A2003F6F7E /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4C90A929EFC0A2003F6F7E /* BaseRepository.swift */; };
 		DD4C90AD29EFC47A003F6F7E /* SecurityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4C90AC29EFC47A003F6F7E /* SecurityManager.swift */; };
+		DD4C90AF29EFCA76003F6F7E /* TokenRefreshPlugIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4C90AE29EFCA76003F6F7E /* TokenRefreshPlugIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		DD4C90A529EFBCDE003F6F7E /* APILogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILogger.swift; sourceTree = "<group>"; };
 		DD4C90A929EFC0A2003F6F7E /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		DD4C90AC29EFC47A003F6F7E /* SecurityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityManager.swift; sourceTree = "<group>"; };
+		DD4C90AE29EFCA76003F6F7E /* TokenRefreshPlugIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRefreshPlugIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				DD4C90A529EFBCDE003F6F7E /* APILogger.swift */,
 				DD4C90A929EFC0A2003F6F7E /* BaseRepository.swift */,
+				DD4C90AE29EFCA76003F6F7E /* TokenRefreshPlugIn.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			files = (
 				DD4C90AA29EFC0A2003F6F7E /* BaseRepository.swift in Sources */,
 				DD4C90A629EFBCDE003F6F7E /* APILogger.swift in Sources */,
+				DD4C90AF29EFCA76003F6F7E /* TokenRefreshPlugIn.swift in Sources */,
 				DD4C909129EFB3E0003F6F7E /* ViewController.swift in Sources */,
 				DD4C908D29EFB3E0003F6F7E /* AppDelegate.swift in Sources */,
 				DD4C90A129EFB3F5003F6F7E /* UserDefaultManager.swift in Sources */,

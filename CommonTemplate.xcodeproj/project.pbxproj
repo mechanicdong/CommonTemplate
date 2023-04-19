@@ -14,6 +14,8 @@
 		DD4C909629EFB3E1003F6F7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4C909529EFB3E1003F6F7E /* Assets.xcassets */; };
 		DD4C909929EFB3E1003F6F7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4C909729EFB3E1003F6F7E /* LaunchScreen.storyboard */; };
 		DD4C90A129EFB3F5003F6F7E /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4C90A029EFB3F5003F6F7E /* UserDefaultManager.swift */; };
+		DD4C90A429EFBCB2003F6F7E /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = DD4C90A329EFBCB2003F6F7E /* Moya */; };
+		DD4C90A629EFBCDE003F6F7E /* APILogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4C90A529EFBCDE003F6F7E /* APILogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,7 @@
 		DD4C909829EFB3E1003F6F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD4C909A29EFB3E1003F6F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD4C90A029EFB3F5003F6F7E /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		DD4C90A529EFBCDE003F6F7E /* APILogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4C90A429EFBCB2003F6F7E /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +66,7 @@
 				DD4C908E29EFB3E0003F6F7E /* SceneDelegate.swift */,
 				DD4C909029EFB3E0003F6F7E /* ViewController.swift */,
 				DD4C90A029EFB3F5003F6F7E /* UserDefaultManager.swift */,
+				DD4C90A529EFBCDE003F6F7E /* APILogger.swift */,
 				DD4C909229EFB3E0003F6F7E /* Main.storyboard */,
 				DD4C909529EFB3E1003F6F7E /* Assets.xcassets */,
 				DD4C909729EFB3E1003F6F7E /* LaunchScreen.storyboard */,
@@ -86,6 +91,9 @@
 			dependencies = (
 			);
 			name = CommonTemplate;
+			packageProductDependencies = (
+				DD4C90A329EFBCB2003F6F7E /* Moya */,
+			);
 			productName = CommonTemplate;
 			productReference = DD4C908929EFB3E0003F6F7E /* CommonTemplate.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +122,9 @@
 				Base,
 			);
 			mainGroup = DD4C908029EFB3E0003F6F7E;
+			packageReferences = (
+				DD4C90A229EFBCB2003F6F7E /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = DD4C908A29EFB3E0003F6F7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4C90A629EFBCDE003F6F7E /* APILogger.swift in Sources */,
 				DD4C909129EFB3E0003F6F7E /* ViewController.swift in Sources */,
 				DD4C908D29EFB3E0003F6F7E /* AppDelegate.swift in Sources */,
 				DD4C90A129EFB3F5003F6F7E /* UserDefaultManager.swift in Sources */,
@@ -362,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD4C90A229EFBCB2003F6F7E /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD4C90A329EFBCB2003F6F7E /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD4C90A229EFBCB2003F6F7E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD4C908129EFB3E0003F6F7E /* Project object */;
 }

@@ -26,39 +26,34 @@ final class SecurityManager {
         return self.read(service, account: key.rawValue)
     }
     
+    @MainActor
     public func addUserAuth(_ accessToken: String, _ refreshToken: String, _ expiredAt: Int64) {
-        Task { @MainActor in
-            add(accessToken, key: .access)
-            add(refreshToken, key: .refresh)
-            add(expiredAt, key: .tokenExpiration)
-        }
+        add(accessToken, key: .access)
+        add(refreshToken, key: .refresh)
+        add(expiredAt, key: .tokenExpiration)
     }
     
+    @MainActor
     private func add(_ value: String, key: Key) {
-        Task { @MainActor in
-            create(service, account: key.rawValue, value: value)
-        }
+        create(service, account: key.rawValue, value: value)
     }
     
+    @MainActor
     private func add(_ value: Int64, key: Key) {
-        Task { @MainActor in
-            create(service, account: key.rawValue, value: String(value))
-        }
+        create(service, account: key.rawValue, value: String(value))
     }
     
+    @MainActor
     private func removeAll() {
-        Task { @MainActor in
-            remove(key: .access)
-            remove(key: .refresh)
-            remove(key: .tokenExpiration)
-            remove(key: .FCM)
-        }
+        remove(key: .access)
+        remove(key: .refresh)
+        remove(key: .tokenExpiration)
+        remove(key: .FCM)
     }
     
+    @MainActor
     private func remove(key: Key) {
-        Task { @MainActor in 
-            delete(service, account: key.rawValue)
-        }
+        delete(service, account: key.rawValue)
     }
 }
 
